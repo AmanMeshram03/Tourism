@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/translate.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Translate</title>
+</head>
+
+<body>
+
+    <%- include("./header.ejs") %>
+
+        <section class="translate">
+
+            <form action="/translate" method="post">
+
+                <div class="top">
+                    <div class="from">
+                        <select name="from" id="">
+                            <% languages.forEach((lang)=> { %>
+                                <% if (locals.from) {%>
+                                    <% if (lang.code===from) {%>
+                                        <option value="<%= lang.code %>" selected>
+                                            <%= lang.language %>
+                                        </option>
+                                        <%} else {%>
+                                            <option value="<%= lang.code %>">
+                                                <%= lang.language %>
+                                            </option>
+                                            <%}%>
+                                                <%} else {%>
+                                                    <option value="<%= lang.code %>">
+                                                        <%= lang.language %>
+                                                    </option>
+                                                    <%}%>
+                                                        <%})%>
+                        </select><br>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right-long"></i>
+
+                    <div class="to">
+                        <select name="to" id="">
+                            <% languages.forEach((lang)=> { %>
+                                <% if (locals.to) {%>
+                                    <% if (lang.code===to) {%>
+                                        <option value="<%= lang.code %>" selected>
+                                            <%= lang.language %>
+                                        </option>
+                                        <%} else {%>
+                                            <option value="<%= lang.code %>">
+                                                <%= lang.language %>
+                                            </option>
+                                            <%}%>
+                                                <%} else {%>
+                                                    <% if (lang.language==="English" ) { %>
+                                                        <option value="<%= lang.code %>" selected>
+                                                            <%= lang.language %>
+                                                        </option>
+                                                        <%} else {%>
+                                                            <option value="<%= lang.code %>">
+                                                                <%= lang.language %>
+                                                            </option>
+                                                            <%}%>
+                                                                <%}%>
+                                                                    <%})%>
+                        </select><br>
+                    </div>
+
+                </div>
+
+                <div class="bottom">
+
+                    <div class="translate">
+                        <% if (locals.translateText) { %>
+                            <textarea name="translateText" id=""
+                                placeholder="Enter Text"><%= translateText %></textarea>
+                            <%} else {%>
+                                <textarea name="translateText" id="" placeholder="Enter Text"></textarea>
+                                <%}%>
+                    </div>
+
+                    <div></div>
+
+                    <div class="translated">
+                        <% if (locals.trans) { %>
+                            <p>
+                                <%= trans %>
+                            </p>
+                            <% } else { %>
+                                <p style="color:grey">Translation . . .</p>
+                                <%}%>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn">Translate</button>
+
+            </form>
+
+        </section>
+
+        <%- include("./footer.ejs") %>
+</body>
+
+</html>

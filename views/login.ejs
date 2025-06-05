@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/login.css">
+
+</head>
+
+<body>
+
+    <%- include("./header.ejs") %>
+
+        <section class="login">
+
+            <form action="/login" method="post">
+
+                <h3 id="title">login</h3>
+
+                <div>
+                    <i class="fa-solid fa-at"></i>
+                    <input type="email" placeholder="Email" name="username" autocomplete="off">
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="Password" name="password" autocomplete="off">
+                </div>
+
+                <p class="forgot-pass">forgot password?</p>
+
+                <div class="message">
+                    <% if (locals.message) { %>
+                        <p>
+                            *<%= message %>
+                        </p>
+                        <% } %>
+                </div>
+
+                <button>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    log in
+                </button>
+
+                <div class="link">
+                    <p>Not having an account? </p>
+                    <a href="/signup">Sign up</a>
+                </div>
+
+            </form>
+        </section>
+
+        <%- include("./footer.ejs") %>
+
+</body>
+
+</html>

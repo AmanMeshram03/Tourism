@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #3B3B3B;
+}
+
+.guidebox {
+    display: flex;
+    margin: 80px auto;
+    background-color: #7aa7b7;
+    height: 90vh;
+    width: 90%;
+    border: 5px solid rgb(59, 59, 59, 0.25);
+    box-sizing: border-box;
+    box-shadow: white 5px 6px 10px;
+
+
+}
+
+.guidebox img {
+    height: 96%;
+    width: 72%;
+    z-index: 2;
+    margin: 15px 20px;
+}
+
+h1 {
+    font-size: 77px;
+    color: white;
+    margin-left: 17px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+}
+
+.sidebar {
+    height: 217px;
+    width: 722px;
+    margin: 220px -380px;
+    background-color: #a7dff3;
+    z-index: 2;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: black 2px 5px;
+}
+
+.sidebar p {
+    font-size: 25px;
+    font-family: "Playball", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.guidemiddle {
+    display: grid;
+    gap: 2.1rem;
+    justify-content: space-around;
+    padding: 10px 10px;
+    grid-template-rows: 450px 450px;
+    grid-template-columns: 720px 720px;
+
+}
+
+.middlebox {
+    display: flex;
+    background-color: #7aa7b7;
+    z-index: -1;
+}
+
+.middlebox i {
+    padding: 8px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Courgette", cursive;
+    color: white;
+}
+
+#generalinfo {
+    display: flex;
+}
+
+#generalinfo img {
+    height: 415px;
+    width: 361px;
+    position: relative;
+    top: 32px;
+    left: -162px;
+}
+
+#transport img{
+    height: 415px;
+    width: 361px;
+    position: relative;
+    top: 32px;
+    left: -133px;
+
+}
+
+#Eat img {
+    height: 415px;
+    width: 361px;
+    position: relative;
+    top: 32px;
+    left: -96px;
+}
+#Map img{
+    height: 415px;
+    width: 361px;
+    position: relative;
+    top: 32px;
+    left: -72px;
+}
+.para{
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playball", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+.para1,.para2{
+    display: flex;
+    position: relative;
+    left: -71px;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

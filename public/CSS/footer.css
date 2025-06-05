@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    /* border: 1px solid black; */
+    padding-inline: calc(4rem + 3vw);
+    padding-block: 3rem 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+}
+footer .top .left .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+footer .top .left .logo p{
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+footer .top .left form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .top .left form h4 {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+footer .top .left form input {
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3px;
+}
+
+footer .top .left form button {
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 3px;
+    text-transform: capitalize;
+    background-color: black;
+    cursor: pointer ;
+    margin-top: 10px;
+}
+
+
+
+footer .router {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .router p.footer-router-head, footer .other-links p.footer-router-head{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+footer .router a, footer .other-links a{
+    color: grey;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.5;
+}
+footer .router a:hover,
+footer .other-links a:hover{
+    color: black;
+}
+footer .router a i, footer .other-links a i{
+    font-size: 12px;
+}
+
+
+footer .other-links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+footer .top .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .top .social-links p.social-links-head {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+footer .top .social-links p{
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-size: 12px;
+}
+footer .top .social-links p a{color: #444;}
+footer .top .social-links p a:hover{color: #000; text-decoration: underline;}
+
+footer .top .social-links div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+footer .top .social-links div a{
+    background-color: black;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+footer .top .social-links div a i{color: white;}
+
+
+footer .bottom {
+    border-top: 1px solid grey;
+    padding: 1rem 0;
+}
+
+footer .bottom p {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+}

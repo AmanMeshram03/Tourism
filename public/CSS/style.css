@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.mynavbar {
+    background-color: #7304b9;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    text-overflow: none;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.mynavbar #search {
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    right: 50px;
+    margin: 7px 26px;
+    padding: 4px 13px;
+    border-radius: 10px;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.mynavbar img {
+    overflow: hidden;
+    position: relative;
+    left: 715px;
+    top: 15px;
+    height: 20px;
+    width: 21px;
+    z-index: 2;
+}
+
+.mynavbar li {
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.mynavbar li:hover {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 73px;
+    font-family: "Courgette", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #2cd1f7;
+}
+
+
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 80px;
+    font-family: "Courgette", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: 45px;
+    margin-top: 55px;
+    color: #2cd1f7;
+    text-align: center;
+    font-family: "Courgette", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h6 {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Playball", cursive;
+    color: rgb(30, 30, 30);
+}
+
+.box {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 20%;
+    text-align: center;
+    color: rgb(255, 252, 252);
+    font-weight: bolder;
+    border: 8px solid #2cd1f7;
+    width: 60%;
+    height: 50vh;
+    font-size: 40px;
+    padding: 0px 20px;
+    font-family: "Playball", cursive;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.main {
+    position: relative;
+    top: 0px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/jovyn-chamb-iWMfiInivp4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.middle {
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 32% 32% 33%;
+    grid-gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+    /*border: 2px solid black;*/
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 55px;
+    padding: 15px 20px;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+   /* border: 1.5px solid black;*/
+    text-align: center;
+    background-color: rgb(0 0 0 / 40%);
+    opacity: 0.98;
+    border-radius: 10px;
+}
+.container:hover{
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.container img {
+    height: 260px;
+    width: 400px;
+    padding: 20px 5px;
+    border-radius:20px;
+}
+
+.services {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 32% 32% 33%;
+    grid-gap: 1rem;
+    padding: 85px 10px;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(../images/lake2.jpg) no-repeat center center/cover;
+    z-index: -1;
+    
+}
+
+.servicesbox {
+    border: 3px solid #2cd1f7;
+    font-family: "Courgette", cursive;
+    box-sizing: border-box;
+    box-shadow: #2cd1f7 2px 5px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.servicesbox img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    left: 200px;
+}
+
+
+.carousel {
+    position: relative;
+    margin-top: 100px;
+    height: 50vh;
+}
+
+.partners {
+    display: flex;
+    height: 50vh;
+    text-align: center;
+    gap: 8.5rem;
+    justify-content: center;
+}
+
+.partnersbox img {
+    height: 150px;
+    width: 200px;
+}
+
+.button {
+    padding: 5px 5px;
+    position: relative;
+    margin: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttoninner {
+    background-color: rgb(255, 255, 255, 0.25);
+    border: 2px solid #ffffff;
+    margin: 10px 170px;
+    padding: 10px 20px;
+    color: #2cd1f7;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: "Courgette", cursive;
+
+}
+
+#book {
+    background-color: #2cd1f7;
+    color: white;
+}
+
+#explore {
+    background-color: rgb(255, 255, 255, 0.25);
+    color: white;
+    border: 2px solid #2cd1f7;
+}
+
+#book:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.25);
+    color: #2cd1f7;
+
+}
+
+#explore:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2cd1f7;
+}
